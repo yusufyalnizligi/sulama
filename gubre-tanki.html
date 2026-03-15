@@ -350,6 +350,40 @@
         <circle cx="400" cy="130" r="12" fill="#f0a500" opacity="0.25" stroke="#f0a500" stroke-width="2" />
         <circle cx="400" cy="320" r="10" fill="#3fb950" opacity="0.25" stroke="#3fb950" stroke-width="2" />
 
+        <!-- Manometre 1 (Vana 5 Öncesi Yüksek Basınç) -->
+        <g transform="translate(394,160)">
+          <!-- bağlantı rekoru -->
+          <rect x="-14" y="-3" width="14" height="6" fill="#484f58" />
+          <!-- dış kasa -->
+          <circle cx="-28" cy="0" r="14" fill="#161b22" stroke="#8b949e" stroke-width="2" />
+          <!-- iç kadran -->
+          <circle cx="-28" cy="0" r="10" fill="#0d1117" />
+          <!-- gösterge çizgileri -->
+          <path d="M-36,0 A8,8 0 0,1 -20,0" fill="none" stroke="#8b949e" stroke-width="2" stroke-dasharray="2 3" opacity="0.6"/>
+          <!-- ibre (yüksek basıncı göstersin, sağa dönük) -->
+          <line x1="-28" y1="0" x2="-22" y2="-4" stroke="#f85149" stroke-width="1.5" stroke-linecap="round" />
+          <!-- orta göbek -->
+          <circle cx="-28" cy="0" r="2.5" fill="#c9d1d9" />
+          <text x="-48" y="3" text-anchor="end" fill="#8b949e" font-size="9" font-family="Inter" font-weight="600">P1</text>
+        </g>
+
+        <!-- Manometre 2 (Vana 5 Sonrası Düşük Basınç) -->
+        <g transform="translate(394,250)">
+          <!-- bağlantı rekoru -->
+          <rect x="-14" y="-3" width="14" height="6" fill="#484f58" />
+          <!-- dış kasa -->
+          <circle cx="-28" cy="0" r="14" fill="#161b22" stroke="#8b949e" stroke-width="2" />
+          <!-- iç kadran -->
+          <circle cx="-28" cy="0" r="10" fill="#0d1117" />
+          <!-- gösterge çizgileri -->
+          <path d="M-36,0 A8,8 0 0,1 -20,0" fill="none" stroke="#8b949e" stroke-width="2" stroke-dasharray="2 3" opacity="0.6"/>
+          <!-- ibre (düşük basıncı göstersin, sola dönük) -->
+          <line x1="-28" y1="0" x2="-32" y2="-6" stroke="#f85149" stroke-width="1.5" stroke-linecap="round" />
+          <!-- orta göbek -->
+          <circle cx="-28" cy="0" r="2.5" fill="#c9d1d9" />
+          <text x="-48" y="3" text-anchor="end" fill="#8b949e" font-size="9" font-family="Inter" font-weight="600">P2</text>
+        </g>
+
         <!-- 5: ANA HAT KISICI VANA (Vertical, x=400, y=210) -->
         <g transform="translate(384,192)">
           <rect x="0" y="0" width="32" height="36" rx="4" fill="#1c2833" stroke="#f0a500" stroke-width="1.8" />
@@ -585,6 +619,21 @@
         <div class="legend-text">
           <h4 style="color:#f85149">⑨ Tahliye Vanası</h4>
           <p>Tankı boşaltmak için</p>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="legend-card">
+        <div class="legend-icon" style="background:#161b22;">
+          <svg width="22" height="22" viewBox="0 0 22 22">
+            <circle cx="11" cy="11" r="8" fill="none" stroke="#8b949e" stroke-width="1.5" />
+            <path d="M7,11 A4,4 0 0,1 15,11" fill="none" stroke="#8b949e" stroke-width="1" stroke-dasharray="1 2" />
+            <line x1="11" y1="11" x2="8" y2="8" stroke="#f85149" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="11" cy="11" r="1.5" fill="#c9d1d9" />
+          </svg>
+        </div>
+        <div class="legend-text">
+          <h4 style="color:#8b949e">⑩ Manometre (P1/P2)</h4>
+          <p>Basınç farkını ölçer</p>
         </div>
       </div>
     </div>
